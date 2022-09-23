@@ -1,0 +1,161 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    color: rgb(94, 94, 94);
+    overflow: hidden;
+}  
+
+#mode {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 20px;
+    color: rgb(94, 94, 94);
+}
+.dark-mode {
+    position: absolute;
+    right: 5px;
+    color: rgb(94, 94, 94);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+#dark-mode {
+    cursor: pointer;
+    padding-left: 10px;
+    font-size: 25px;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+
+#time {
+    border: 3px solid rgb(128, 128, 128);
+    padding: 75px 30px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.time{
+    padding: 40px 0 50px 0;
+    /* border: 1px solid black;  */
+    margin: 5px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    color: rgb(94, 94, 94);
+}
+
+.time-interval-container {
+    border: 1px solid black; 
+    height: 300px;
+    overflow: scroll;
+    border: none;
+}
+
+.time-interval {
+    border: 1px solid rgba(223, 221, 221, 0.338);
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* color: rgb(94, 94, 94); */
+}
+
+.time-interval-lightMode {
+    color: white;
+}
+
+#time-instance {
+    font-size: 17px;
+    margin-left: 50px;
+}
+
+#interval, #SN {
+    font-size: 12px;
+    align-self: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    background-color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 10px;
+    /* background-color: rgb(35, 35, 37); */
+}
+
+span {
+    margin-left: 0px;
+    padding: 14px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(58, 97, 255);
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    /* color: grey; */
+}
+
+#reset, #lap {
+    font-size: 17px;
+    cursor: pointer;
+}
+
+#reset:active, #lap:active{
+    color: rgba(20, 67, 255, 0.824);
+}
+
+#play-pause:active {
+    background-color: rgba(20, 67, 255, 0.824);
+}
+
+#play-pause {
+    color: white;
+    background-color: rgba(20, 67, 255, 0.824);
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 20px;
+    cursor: pointer;
+    box-shadow: 0px 6px 24px -4px rgba(25, 25, 58, 0.459);
+}
+
+@media only screen and (min-width: 500px){
+    ::-webkit-scrollbar-corner {
+        background: none;
+    }
+    ::-webkit-scrollbar {
+        background: none; 
+    }
+}
+
+@media only screen and (min-width: 100px){
+    .buttons {
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+        /* padding-bottom: 10%; */
+    }
+
+    .time-interval-container {
+        /*border: 1px solid black;
+        */height: 300px;
+        overflow: scroll;
+        border: none;
+        margin-bottom: 25%;
+        transition: 1s;
+        -webkit-transition: 1s;
+        -moz-transition: 1s;
+        -ms-transition: 1s;
+        -o-transition: 1s;
+    }
+}

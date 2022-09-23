@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="stopwatch.css">
+    <link rel="stylesheet" href="css/all.css">
+    <title>Stopwatch</title>
+</head>
+<body>
+    <div class="container" id="container">
+        <i class="fa fa-moon fa-sun" id="mode"></i>
+        <span class="dark-mode" id="mode-text"> Mode <i class="fa fa-toggle-off" id="dark-mode"></i> </span>
+        <div class="time">
+            <div class="timer">
+                <p id="time"> 00" 00" 00 </p>
+            </div>
+        </div>
+        
+        <!-- time intervals created by javascript and appended to the container below -->
+        <div class="time-interval-container"  id="time-interval-container">
+            <!-- <div class="time-interval">
+                <p id="SN">1</p>
+                <p id="time-instance">00 : 00 : 00</p>
+                <p id="interval"> 00 : 00 : 00</p>
+            </div> -->
+        </div>
+
+        <div class="buttons" id="buttons">
+            <span id="reset"> <i class="fa fa-sync-alt"></i> </span>
+            <span id="play-pause"> <i class="fa fa-play fa-pause"></i> </span>
+            <span id="lap"> <i class="fa fa-stopwatch"></i> </span>
+        </div>
+    </div>
+
+<script src="stopwatch.js"></script>
+</body>
+</html>
